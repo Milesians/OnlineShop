@@ -7,13 +7,25 @@ public class User {
     private String userName;
     private String userPassword;
     private String userSex;
-    private java.sql.Timestamp userBirthday;
+    private String userBirthday;
     private String userIdenityCode;
     private String userEmail;
     private String userMobile;
     private String userAddress;
     private int userStatus;
 
+    public User(String userId, String userName, String userPassword, String userSex, String userBirthday, String userIdenityCode, String userEmail, String userMobile, String userAddress, int userStatus) {
+        this.userId = userId;
+        this.userName = userName;
+        this.userPassword = userPassword;
+        this.userSex = userSex;
+        this.userBirthday = userBirthday;
+        this.userIdenityCode = userIdenityCode;
+        this.userEmail = userEmail;
+        this.userMobile = userMobile;
+        this.userAddress = userAddress;
+        this.userStatus = userStatus;
+    }
 
     public String getUserId() {
         return userId;
@@ -51,11 +63,11 @@ public class User {
     }
 
 
-    public java.sql.Timestamp getUserBirthday() {
+    public String getUserBirthday() {
         return userBirthday;
     }
 
-    public void setUserBirthday(java.sql.Timestamp userBirthday) {
+    public void setUserBirthday(String userBirthday) {
         this.userBirthday = userBirthday;
     }
 
